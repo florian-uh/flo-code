@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/132c2773b1.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class="banniere-titre">
+            <h1>Trouvez votre prochaine destination !</h1>
+        </div>
+        <form id="form">
+            <div class="field">
+                <select id="pays" >
+                    <option value="hawai">Hawaï</option>
+                    <option value="maldives">Les Maldives</option>
+                    <option value="bahamas">Bahamas</option>
+                    <option value="borabora">Bora-Bora</option>
+                    <option value="tahiti">Tahiti</option>
+                </select>
+            </div>
+            <!-- Date de départ -->
+            <div class="field">
+                <input type="date" id="start" 
+                value="2021-06-02"
+                min="2021-06-01">
+            </div>
+            <!-- Date de retour -->
+            <div class="field">
+                <input type="date" id="end" 
+                value="2021-06-02"
+                min="2021-06-01">
+            </div>
+            <!-- Bouton -->
+            <button type="submit"><i class="fas fa-plane"></i></button>
+        </form>
+        <!-- Ici les résultats de la sélection -->
+        <div class="liste-resultats">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

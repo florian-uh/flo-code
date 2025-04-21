@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;/* 1rem = 10px */
+}
+body{
+    font-size: 1.4rem;/* soit 14px */
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2331;
+}
+.banniere-titre{
+    margin-bottom: 1rem;
+}
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;/* necessaire lorsque position: fixed */
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;/* positionne les enfants */
+    align-items: center;/* les centres verticalement */
+    padding: 3rem;
+    opacity: 1; /* modif en javascript */
+    transition: 0.5s;
+}
+.cookies-btn{
+    display: flex;
+}
+.btn{
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.btn.btn-success{
+    background-color: lightgreen;
+}
+.btn.btn-deny{
+    background-color: lightcoral;
+}
